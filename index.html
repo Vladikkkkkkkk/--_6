@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Гра "Заєць і Вовки"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Гра "Заєць і Вовки"</h1>
+        <div class="controls">
+            <label>
+                Рівень складності:
+                <select id="difficulty">
+                    <option value="easy">Легкий</option>
+                    <option value="medium">Середній</option>
+                    <option value="hard">Складний</option>
+                </select>
+            </label>
+            <button id="resetButton">Нова гра</button>
+        </div>
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <span>Thinking...</span>
+        </div>
+        <div id="board" class="board"></div>
+        <div id="winner" class="winner" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
